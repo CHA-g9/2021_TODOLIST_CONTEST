@@ -1,0 +1,50 @@
+.form {
+  display: inline-flex;
+  padding: 1rem;
+  /* border-bottom: 1px solid #000000; */
+  background-color: none;
+}
+.form input {
+  flex: 1; /* 버튼을 뺀 빈 공간을 모두 채워줍니다 */
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  background-color: rgba(0,0,0,0);
+  }
+
+.form .make-button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    background: rgba(255, 166, 0, 0.7);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+.form .make-button:hover {
+    background: rgba(153, 205, 50, 0.623);
+  }
+
+.todo-item {
+    padding: 1rem;
+    display: flex;
+    align-items: center; /* 세로 가운데 정렬 */
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
+.todo-item:hover {
+    background: #e6fce3;
+}
+
+.todo-item input:checked + label{
+  color : rgb(165, 164, 164);
+  text-decoration: line-through;
+} 
+

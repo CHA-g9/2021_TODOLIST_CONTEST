@@ -1,0 +1,150 @@
+.Total{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 20px auto;
+    width: 100%;
+    height: 135%;
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 2px 3px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 30px;
+}
+
+.Total .Header{
+    /* background-color: #FFFFFF; */
+    margin-top: 10px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    font-family: 'Sunflower', sans-serif;
+}
+
+/* 영어 모드 버튼 디자인
+.Total .Header .switch-button { 
+    position: relative;
+    display: inline-block; 
+    width: 55px; 
+    height: 30px; 
+} 
+
+.Total .Header .switch-button input { 
+    opacity: 0; 
+    width: 10; 
+    height: 10; 
+}
+.Total .Header .switch-button .EngMode { 
+    position: absolute; 
+    cursor: pointer; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    border-radius:20px; 
+    background-color: skyblue; 
+    box-shadow: inset 1px 5px 1px #999; 
+    -webkit-transition: .4s; 
+    transition: .4s; 
+} 
+.Total .Header .switch-button .EngMode:before { 
+    position: absolute; 
+    content: "on"; 
+    height: 22px; 
+    width: 22px;
+    left: 4px; 
+    bottom: 4px; 
+    background-color: #fff; 
+    -webkit-transition: .5s; 
+    transition: .4s; 
+    border-radius:20px; } 
+
+.switch-button input:checked + .EngMode { 
+    background-color: #F2D522; 
+    box-shadow: inset 1px 5px 1px #E3AE56; 
+} 
+.switch-button input:checked + .EngMode:before {
+    -webkit-transform: translateX(26px); 
+    -ms-transform: translateX(26px); 
+    transform: translateX(26px); 
+}
+
+/* 달력 header 부분 디자인 */
+.Total .Header .header-buttons {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    padding: 0;
+    margin: auto 30px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.header-buttons .move-button {
+    height: 20px;
+    margin-top: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+.header-buttons .move-button .icon{
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+ 
+/* header 내 요일 디자인*/
+.Total .Header .dayname {
+    margin: 10px 0px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    text-align: center;
+}
+.dayname .box {
+    font-size: 20px;
+    text-align: center;
+}
+
+.Total .Month {
+    height: auto;
+    width: 100%;
+    font-size: 20px;
+    display: flex;      /* display 설정해줘야 아래 flex로 해주면 direction 선택가능*/
+    flex-direction: column;   /* 이건 세로순으로  태그들을 표시함 css*/
+    /* align-items: center;      이건 가로 중앙 css */
+    /* justify-content: center;  이건 세로 중앙 css */
+  
+  }
+
+  .Month table{
+    border-collapse: collapse;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .Month table tbody{
+    display:flex;
+    flex-direction: column;
+  }
+  .Month tr{
+      display:flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+  }
+  .Month td{
+      display:flex;
+      border: 1px solid white;
+      width: 100%;
+      height: 100%;
+  }
+
+  .Month td span{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 5px;
+  }

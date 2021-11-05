@@ -1,0 +1,52 @@
+body {
+    font-family: 'Zen Kurenaido', sans-serif;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: auto;
+    height: 150%;
+
+}
+h1 {
+    text-align: center;
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100% 100%;
+}
+.Total {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.Todo {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 98%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 2px 3px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 30px;
+
+}
+.Comment{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 35%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 2px 3px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 30px;
+}

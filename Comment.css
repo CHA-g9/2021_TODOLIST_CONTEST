@@ -1,0 +1,20 @@
+#root .Comment .comment-input{
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: rgba(0,0,0,0);
+
+}
+.Comment .comment-button{
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: orange;
+
+}
+.Comment .self-comment{
+    display: block;
+    padding-top : 10px;
+
+}
